@@ -1,7 +1,7 @@
 // function to convert kilometer to meter
 function kilometerToMeter(Length)
 {
-    if(Length>0)
+    if(Length>0 && typeof(Length)=='number')
     {
         var convertToMeter=Length*1000;
         return convertToMeter;
@@ -14,7 +14,7 @@ function kilometerToMeter(Length)
 // function to calculate your budget
 function budgetCalculator(watchQuantity,phoneQuantity,laptopQuantity){
 
-    if (watchQuantity<0 || phoneQuantity<0 || laptopQuantity<0){
+    if (watchQuantity<0 && typeof(watchQuantity)=='number'|| phoneQuantity<0 && typeof(phoneQuantity)=='number' || laptopQuantity<0 && typeof(laptopQuantity)=='number'){
         console.log("you have given wrong input.Please put the valid input in the function");
         return;
 
@@ -56,4 +56,5 @@ function hotelCost(days){
 // function megaFriend(){}
 console.log(kilometerToMeter(99));
 console.log(budgetCalculator(1,0,3));
-console.log(hotelCost(33.5));
+console.log(hotelCost(30));
+ 
