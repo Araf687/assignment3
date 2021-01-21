@@ -1,9 +1,9 @@
 // function to convert kilometer to meter
-function kilometerToMeter(Length)
+function kilometerToMeter(measurement)
 {
-    if(Length>0 && typeof(Length)=='number')
+    if(measurement>0 && typeof(measurement)=='number')
     {
-        var convertToMeter=Length*1000;
+        var convertToMeter=measurement*1000;
         return convertToMeter;
     }
     else{
@@ -53,8 +53,29 @@ function hotelCost(days){
     }
     
 } 
-// function megaFriend(){}
+function megaFriend(inputArray){
+
+    if(typeof(inputArray)=='object'){
+
+        var max=inputArray[0].length;
+        for(var i=1;i<inputArray.length;i++)
+        {
+            stringLength=inputArray[i].length;
+            if(max<stringLength)
+            {
+                max=stringLength;
+            }
+        }
+        return max;
+    }
+    else{
+        console.log("you have given wrong input.Please put the valid input in the function");
+    }
+}
+a=["araf","farhan","rahanuma","joyita","asif"];
 console.log(kilometerToMeter(99));
 console.log(budgetCalculator(1,0,3));
 console.log(hotelCost(30));
+console.log(megaFriend(1));
+
  
