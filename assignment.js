@@ -1,3 +1,5 @@
+// https://github.com/Araf687/assignment3/blob/main/assignment.js
+
 // function to convert kilometer to meter
 function kilometerToMeter(measurement)
 {
@@ -27,7 +29,7 @@ function budgetCalculator(watchQuantity,phoneQuantity,laptopQuantity){
         return totalCost;
     }
 } 
-
+// function for calculating the hotel cost
 function hotelCost(days){
     if(days>0 && typeof(days)=='number')
     {
@@ -53,6 +55,7 @@ function hotelCost(days){
     }
     
 } 
+// function for finding the big string from the array
 function megaFriend(inputArray){
 
     if(typeof(inputArray)=='object'){
@@ -72,10 +75,5 @@ function megaFriend(inputArray){
         console.log("you have given wrong input.Please put the valid input in the function");
     }
 }
-a=["araf","farhan","rahanuma","joyita","asif"];
-console.log(kilometerToMeter(99));
-console.log(budgetCalculator(1,0,3));
-console.log(hotelCost(30));
-console.log(megaFriend(1));
 
  
