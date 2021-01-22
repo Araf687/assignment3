@@ -16,10 +16,9 @@ function kilometerToMeter(measurement)
 // function to calculate your budget
 function budgetCalculator(watchQuantity,phoneQuantity,laptopQuantity){
 
-    if (watchQuantity<0 && typeof(watchQuantity)=='number'|| phoneQuantity<0 && typeof(phoneQuantity)=='number' || laptopQuantity<0 && typeof(laptopQuantity)=='number'){
+    if (watchQuantity<0 && typeof(watchQuantity)=='number'|| phoneQuantity<0 && typeof(phoneQuantity)=='number' || laptopQuantity<0 && typeof(laptopQuantity)=='number')
+    {
         console.log("you have given wrong input.Please put the valid input in the function");
-        return;
-
     }
     else{
         var watchPrice=50,phonePrice=100,laptopPrice=500;
@@ -29,6 +28,7 @@ function budgetCalculator(watchQuantity,phoneQuantity,laptopQuantity){
         return totalCost;
     }
 } 
+
 // function for calculating the hotel cost
 function hotelCost(days){
     if(days>0 && typeof(days)=='number')
@@ -75,5 +75,4 @@ function megaFriend(inputArray){
         console.log("you have given wrong input.Please put the valid input in the function");
     }
 }
-
  
