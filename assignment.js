@@ -1,4 +1,4 @@
-// https://github.com/Araf687/assignment3/blob/main/assignment.js
+//  https://github.com/Araf687/assignment3
 
 // function to convert kilometer to meter
 function kilometerToMeter(measurement)
